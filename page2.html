@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nos Souvenirs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #FFF0F5, #E6E6FA);
+      color: #333;
+    }
+
+    .header-souvenir {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* باش العنوان يجي في الوسط */
+      position: relative;
+      padding: 20px;
+    }
+
+    .back-button {
+      position: absolute;
+      left: 20px; /* زر في الجهة اليسار */
+    }
+
+    .back-button a {
+      display: inline-block;
+      padding: 8px 15px;
+      background-color: #ff7eb9;
+      color: white;
+      font-size: 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .back-button a:hover {
+      background-color: #ff4f8b;
+    }
+
+    .header-souvenir h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #333;
+    }
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background: #D6336C;
+      top: 0;
+      bottom: 240px;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .container {
+      padding: 20px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    .left {
+      left: -5%;
+    }
+
+    .right {
+      left: 50%;
+    }
+    .center{
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+    }
+
+    .content {
+      padding: 20px;
+      background: white;
+      position: relative;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background: #fff;
+      border: 3px solid #D6336C;
+      top: 30px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .right::before {
+      left: -10px;
+    }
+    .center::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+
+    .content h2 {
+      margin-top: 0;
+      color: #FF6B9E;
+    }
+
+    .content p {
+      margin: 5px 0;
+    }
+
+    .content img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 31px;
+      }
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+      .right {
+        left: 0%;
+      }
+      .container::before {
+        left: 15px;
+      }
+    }
+    
+.btn {       
+  background: #FF6B9E;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff4d88;
+  transform: scale(1.05);
+}
+
+
+
+  </style>
+</head>
+<body>
+    <div class="header-souvenir">
+      <!-- زر رجوع -->
+      <div class="back-button">
+        <a href="aaasaaaaaaaaaaaaaaaa.html">⬅ رجوع</a>
+      </div>
+
+      <!-- عنوان الصفحة -->
+      <h1>Nos Souvenirs 💖</h1>
+    </div>
+
+
+  <div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h2>25 Mai 2024</h2>
+        <p>Awel mara t9abelna w hkina feha 22:00❤️</p>
+        <img src="img/first-date.jpg" alt="Duuma & Nwarty">
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>28 Mai 2024</h2>
+        <p>Stanyt benty bich 3tetny reponse fraht barcha ama m3raftech kifeh n3aber 3leha  😍💘</p>
+        <img src="img/coffee.jpg" alt="Duuma & Nwarty">
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h2>06 September 2024</h2>
+        <p>Awel mara 5rajna mab3athna shyh taswir mkanech ahla haja ama l7that ili 3chnehom maytnsouch 🥹💘</p>
+        <img src="img/valentine.jpg" alt="Duuma & Nwarty">
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>Nos Photos </h2>
+        <p>Tsawerna ili halitehom entt nour inaya 😍💘</p>
+        <div style="text-align:center; margin-top:20px;">
+          <a href="gallery.html" class="btn">Voir Nos Photos 📸</a>
+        </div><br>
+        <img src="img/coffee.jpg" alt="Duuma & Nwarty">
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h2>Nos Videos</h2>
+        <p>Videos mte3na ili 7alitehom ent Hbb Hyety🥹💘</p>
+        <div style="text-align:center; margin-top:20px;">
+          <a href="video.html" class="btn">Voir Nos Videos 📸</a>
+        </div><br>
+        <img src="img/valentine.jpg" alt="Duuma & Nwarty">
+      </div>
+    </div>
+    <div class="container center"><br>
+      <div class="content">
+        <h2>Nos Trends</h2>
+        <p>Trends ili 3malnehom mab3thna Benty mezyana 🥹💘</p>
+        <div style="text-align:center; margin-top:20px;">
+          <a href="trnd.html" class="btn">Voir Nos Trends 📸</a>
+        </div><br>
+        <img src="img/valentine.jpg" alt="Duuma & Nwarty">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

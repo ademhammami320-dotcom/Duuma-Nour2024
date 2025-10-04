@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nos Souvenirs Complet 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #FFE4EC, #E6E6FA);
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      color: #D6336C;
+      margin: 20px 0;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff0f5;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #FF6B9E;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    /* Grid pour photos et vidéos */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .grid img, .grid video {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .grid img:hover, .grid video:hover {
+      transform: scale(1.05);
+    }
+
+    /* Audio list */
+    .audio-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    audio {
+      width: 80%;
+      border-radius: 12px;
+    }
+
+    /* Bouton Retour */
+    .back {
+      display: block;
+      width: 200px;
+      margin: 30px auto;
+      padding: 12px 20px;
+      background-color: #FF6B9E;
+      color: white;
+      text-align: center;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back:hover {
+      background-color: #ff4d88;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 Nos Souvenirs Complet 💖</h1>
+
+  <!-- Section Photos -->
+  <div class="section">
+    <h2>📸 Photos</h2>
+    <div class="grid">
+      <img src="img/p4.jpg" alt="Souvenir 1">
+      <img src="img/p4 (3).jpg" alt="Souvenir 2">
+      <img src="img/p4(4).jpg" alt="Souvenir 3">
+      <img src="img/p4(5).jpg" alt="Souvenir 4">
+      <img src="img/p4 (2).jpg" alt="Souvenir 5">
+      <img src="img/p4 (1).jpg" alt="Souvenir 6">
+    </div>
+  </div>
+
+  <!-- Section Vidéos -->
+  <div class="section">
+    <h2>🎥 Vidéos</h2>
+    <div class="grid">
+      <video controls>
+        <source src="img/rrr.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+      
+    </div>
+  </div>
+
+  <!-- Section Audio -->
+  <div class="section">
+    <h2>🎙️ Messages Vocaux</h2>
+    <div class="audio-list">
+      <audio controls>
+        <source src="img/VID_20251004_055259.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls>
+        <source src="img/VID_20251004_055404.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+
+  <!-- Bouton Retour -->
+  <a href="aaasaaaaaaaaaaaaaaaa.html" class="back">⬅ Retour à l'Accueil</a>
+
+</body>
+</html>
+

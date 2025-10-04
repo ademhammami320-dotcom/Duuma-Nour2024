@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nos Vidéos 🎥</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #FFE4EC, #E6E6FA);
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      margin: 20px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      color: #D6336C;
+    }
+
+    .video-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    video:hover {
+      transform: scale(1.05);
+    }
+
+    /* زر رجوع */
+    .back {
+      display: inline-block;
+      margin: 15px;
+      padding: 10px 20px;
+      background: #FF6B9E;
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back:hover {
+      background: #ff4d88;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Nos Vidéos 🎥</h1>
+
+  <div class="video-gallery">
+    <video controls>
+      <source src="img/vd1.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
+
+    <video controls>
+      <source src="img/vd2.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
+
+    <video controls>
+      <source src="img/vd3.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
+
+    <video controls>
+      <source src="img/vd4.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
+  </div>
+
+  <!-- زر رجوع -->
+  <a href="page2.html" class="back">⬅ Retour aux Souvenirs</a>
+
+</body>
+</html>
